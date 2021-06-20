@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-gray-500;
+  background-color: $color-white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  color: $color-gray-700;
+}
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: $color-gray-700;
+}

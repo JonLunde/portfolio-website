@@ -3,9 +3,16 @@ import ProjectCard from './ProjectCard';
 
 function ProjectsContainer() {
   return (
-    <div className="projects-container">
-      <h2>Projects.</h2>
-      <ProjectCard />
+    <div className="section-container projects">
+      <h2 className="heading-secondary">Projects.</h2>
+      <div className="row">
+        <div className="col-1-of-2">
+          <ProjectCard />
+        </div>
+        <div className="col-1-of-2">
+          <ProjectCard />
+        </div>
+      </div>
     </div>
   );
 }

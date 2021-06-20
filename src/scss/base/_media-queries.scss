@@ -1,0 +1,14 @@
+@media only screen and (max-width: 800px) {
+  nav {
+    height: 3rem;
+  }
+
+  .header-primary-sub img {
+    float: right;
+  }
+
+  .header-primary {
+    display: flex;
+    flex-direction: column;
+  }
+}

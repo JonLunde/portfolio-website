@@ -1,0 +1,41 @@
+@use "../abstracts/" as *;
+
+nav {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-gray-300;
+  height: 6rem;
+  z-index: 1;
+  padding: 0 3%;
+}
+
+.brand {
+  text-decoration: none;
+}
+
+.brand span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
+.brand img {
+  vertical-align: middle;
+}
+
+.menu-item {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.menu-item a {
+  text-decoration: none;
+}
+
+.button-item {
+}
