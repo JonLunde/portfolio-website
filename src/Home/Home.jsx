@@ -25,7 +25,6 @@ function Home() {
       <main>
         <ProjectsContainer />
       </main>
-      <footer>Footer...</footer>
     </div>
   );
 }

@@ -1,41 +1,63 @@
 @use "../abstracts/" as *;
 
-nav {
-  position: sticky;
-  top: 0px;
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $color-gray-300;
-  height: 6rem;
+  position: sticky;
+  top: 0px;
+  font-size: 2rem;
+  background-color: $color-gray-900;
+  height: 8rem;
   z-index: 1;
-  padding: 0 3%;
+  padding: 0 10rem;
+
+  &__brand {
+    // span {
+    //   font-size: 1.3rem;
+    //   font-weight: 700;
+    //   vertical-align: middle;
+    // }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    border: 1px solid $color-black;
+    background-color: $color-gray-700;
+    padding: 1rem 2rem;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__dark-mode {
+  }
 }
 
-.brand {
-  text-decoration: none;
-}
+// .menu-item {
+//   display: flex;
+//   width: 50%;
+//   justify-content: space-evenly;
+//   font-size: 1.3rem;
+//   font-weight: 400;
+// }
 
-.brand span {
-  font-size: 1.3rem;
-  font-weight: 700;
-  vertical-align: middle;
-}
-.brand img {
-  vertical-align: middle;
-}
+// .menu-item a {
+//   text-decoration: none;
+// }
 
-.menu-item {
-  display: flex;
-  width: 50%;
-  justify-content: space-evenly;
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-
-.menu-item a {
-  text-decoration: none;
-}
-
-.button-item {
-}
+// .button-item {
+// }

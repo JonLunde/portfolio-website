@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.footer {
+  min-height: 20vh;
+  background-color: $color-gray-900;
+  text-align: center;
+  padding: 4rem;
+  margin: 0 auto;
+
+  &__account {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 10rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-white;
+    font-size: $font-size-default;
+    font-weight: 500;
+  }
+
+  &__logo {
+    max-height: 7rem;
+    margin-bottom: 1rem;
+  }
+}
