@@ -1,5 +1,11 @@
 @use "../abstracts" as *;
 
+.header {
+  position: relative;
+  display: block;
+  min-height: 80vh;
+}
+
 .heading-primary {
   position: absolute;
 
@@ -34,7 +40,16 @@
   }
 }
 
-.projects {
+.section-projects {
+  position: relative;
+  display: block;
+  min-height: 80vh;
+  padding: 2rem 10rem 30rem 10rem;
+
   background-color: $color-gray-100;
-  text-align: center;
+  text-align: left;
+}
+
+.heading-projects {
+  border-bottom: 3px solid $color-gray-700;
 }
