@@ -16,11 +16,9 @@ function Navbar() {
           About Me
         </a>
       </div>
-      <div className="navigation__dark-mode">
-        <button type="button" sid="btn btn-dark-mode">
-          🌙
-        </button>
-      </div>
+      <button type="button" className="navigation__dark-mode">
+        <i className="fas fa-moon" />
+      </button>
     </nav>
   );
 }
