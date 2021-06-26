@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.about {
+  &__text {
+    line-height: 1.9;
+    max-width: 60ch;
+    color: $color-gray-500;
+  }
+}

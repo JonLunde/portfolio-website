@@ -12,17 +12,15 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <div className="content-container">
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </div>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
       </Switch>
       <Footer />
     </Router>

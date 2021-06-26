@@ -7,11 +7,14 @@ function Home() {
   return (
     <div>
       <header>
-        <div className="header">
-          <h1 className="heading-primary">
-            <span className="heading-primary--main">Hi, I&apos;m Jon!</span>
-            <span className="heading-primary--sub">
+        <div className="header-intro">
+          <h1 className="heading-intro">
+            <span className="header__main heading-intro--main">
+              Hi, I&apos;m Jon!
+            </span>
+            <span className="header__sub heading-intro--sub">
               <img
+                className="heading-intro__img"
                 src="https://via.placeholder.com/300/300"
                 alt="Picture of me."
               />{' '}

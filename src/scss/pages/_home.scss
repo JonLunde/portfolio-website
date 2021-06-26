@@ -1,55 +1,42 @@
 @use "../abstracts" as *;
 
-.header {
+.header-intro {
   position: relative;
   display: block;
-  min-height: 80vh;
+  height: 90vh;
+  background-color: $color-gray-100;
+  border-bottom: 1px solid rgba($color-black, 0.1);
 }
 
-.heading-primary {
+.heading-intro {
   position: absolute;
-
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   &--main {
-    display: block;
-
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 0.4rem;
+    color: $color-gray-700;
     animation: moveInLeft 0.7s ease-out;
   }
 
   &--sub {
-    display: block;
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.8;
     color: $color-gray-500;
-    min-width: 40ch;
-    max-width: 70ch;
-
     animation: moveInRight 0.7s ease-out 0.7s;
     animation-fill-mode: backwards;
-
-    img {
-      max-width: 100%;
-      float: right;
-      margin-left: 5%;
-      margin-top: 3%;
-      height: auto;
-    }
   }
-}
 
-.section-projects {
-  position: relative;
-  display: block;
-  min-height: 80vh;
-  padding: 2rem 10rem 30rem 10rem;
-
-  background-color: $color-gray-100;
-  text-align: left;
-}
-
-.heading-projects {
-  border-bottom: 3px solid $color-gray-700;
+  &__img {
+    max-width: 100%;
+    float: right;
+    margin-left: 5%;
+    margin-top: 3%;
+    height: auto;
+  }
 }
