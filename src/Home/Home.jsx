@@ -17,7 +17,7 @@ function Home() {
                 className="heading-intro__img"
                 src="https://via.placeholder.com/300/300"
                 alt="Picture of me."
-              />{' '}
+              />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
               corporis quae ipsa tempore itaque fugiat facere quas velit magnam
               qui?
