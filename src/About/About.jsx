@@ -41,7 +41,7 @@ function About() {
               <br />
               Earum architecto dolores suscipit laboriosam sed et iste eum
               repellat maiores aspernatur, rem adipisci neque reiciendis amet
-              ullam ducimus modi, consequatur impedit minus cupiditate
+              ullam ducimuasdasds modi, consequatur impedit minus cupiditate
               repellendus sint?
               <br />
               <br />
