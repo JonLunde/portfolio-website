@@ -5,7 +5,7 @@ function About() {
     <div>
       <header>
         <div className="header">
-          <h1 className="heading-primary container">
+          <h1 className="heading-primary content-container">
             <span className="header__main heading-primary--main">About me</span>
             <span className="header__sub heading-primary--sub">
               My name is Jon Lunde. I&apos;m a software devoloper.
@@ -14,7 +14,7 @@ function About() {
         </div>
       </header>
       <main>
-        <div className="about container">
+        <div className="about content-container">
           <div className="about__text">
             <p>
               Hello, I&apos;m Jon! I&apos;m a software devoloper currently based

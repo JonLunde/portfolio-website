@@ -3,7 +3,7 @@
 .header-intro {
   position: relative;
   display: block;
-  height: 90vh;
+  height: 80rem;
   background-color: $color-gray-100;
   border-bottom: 1px solid rgba($color-black, 0.1);
 }
@@ -13,9 +13,10 @@
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 30%;
 
   &--main {
-    font-size: 5rem;
+    font-size: 8rem;
     font-weight: 900;
     letter-spacing: 0.4rem;
     color: $color-gray-700;
@@ -23,7 +24,7 @@
   }
 
   &--sub {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
     line-height: 1.8;
@@ -33,10 +34,12 @@
   }
 
   &__img {
-    max-width: 100%;
+    max-width: 400px;
     float: right;
-    margin-left: 5%;
-    margin-top: 3%;
-    height: auto;
+    shape-outside: url('../../assets/img/cvPhotoBlurCirc400px.png');
   }
+}
+
+.cards-container {
+  width: 80%;
 }

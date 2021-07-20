@@ -1,7 +1,8 @@
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
-import ProjectsContainer from './ProjectsContainer';
+import ProjectsCardContainer from './ProjectsCardContainer';
+import portrait from '../assets/img/cvPhotoBlurCirc400px.png';
 
 function Home() {
   return (
@@ -15,8 +16,8 @@ function Home() {
             <span className="header__sub heading-intro--sub">
               <img
                 className="heading-intro__img"
-                src="https://via.placeholder.com/300/300"
-                alt="Picture of me."
+                src={portrait}
+                alt="Portrait of me."
               />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
               corporis quae ipsa tempore itaque fugiat facere quas velit magnam
@@ -26,7 +27,7 @@ function Home() {
         </div>
       </header>
       <main>
-        <ProjectsContainer />
+        <ProjectsCardContainer />
       </main>
     </div>
   );
