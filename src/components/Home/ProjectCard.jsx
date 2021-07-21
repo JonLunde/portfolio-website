@@ -9,7 +9,7 @@ export default function ProjectCard() {
           <StaticImage
             src="../../images/img1.jpg"
             alt="Project 1 photo"
-            class="card__image u-mb-medium"
+            className="card__image u-mb-medium"
           />
           <div className="heading-tertiary card__title">
             <h3>

@@ -1,10 +1,25 @@
 import React from 'react';
 import Layout from '../../components/Shared/Layout';
+import { Helmet } from 'react-helmet';
 
 export default function About() {
   return (
     <div>
       <Layout>
+        <Helmet>
+          <html lang="en" />
+          <meta charSet="utf-8" />'
+          <meta
+            name="description"
+            content="About me page for Jon Lunde's portfolio website. Here I write about myself, my background and my goals."
+          ></meta>
+          <meta
+            name="keywords"
+            content="About, about me, Jon Lunde, Jon, Magnar,Lunde, HTML, CSS, JavaScript, Typescript, React, Angular, SCSS, GitHub, Web, Development, Software, Gatsby, ExpressJs, Express, NodeJs, Node, Junior, Norway, C#, .NET, .NET Core, Java"
+          ></meta>
+          <meta name="author" content="Jon Lunde"></meta>
+          <title>Jon Lunde portfolio about me page for web development</title>
+        </Helmet>
         <header>
           <div className="header">
             <h1 className="heading-primary content-container">

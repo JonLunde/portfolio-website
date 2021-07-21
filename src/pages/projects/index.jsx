@@ -3,6 +3,7 @@ import Layout from '../../components/Shared/Layout';
 import ProjectsContainer from '../../components/Projects/ProjectsContainer';
 import Project from '../../components/Projects/Project';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 export default function Projects({ data }) {
   // const { frontmatter, html } = data.markdownRemark;
@@ -11,6 +12,20 @@ export default function Projects({ data }) {
   const { edges } = data.allMdx;
   return (
     <div>
+      <Helmet>
+      <html lang="en" />
+        <meta charSet="utf-8" />'
+        <meta
+          name="description"
+          content="Project page for Jon Lunde's portfolio where I list my projects and display key features about them and the process of building them."
+        ></meta>
+        <meta
+          name="keywords"
+          content="Projects, Jon Lunde, Jon, Magnar,Lunde, HTML, CSS, JavaScript, Typescript, React, Angular, SCSS, GitHub, Web, Development, Software, Gatsby, ExpressJs, Express, NodeJs, Node, Junior, Norway, C#, .NET, .NET Core, Java"
+        ></meta>
+        <meta name="author" content="Jon Lunde"></meta>
+        <title>Jon Lunde portfolio project page for web development</title>
+      </Helmet>
       <Layout>
         <header>
           <div className="header">
