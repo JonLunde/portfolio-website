@@ -36,7 +36,7 @@
   &__img {
     max-width: 400px;
     float: right;
-    shape-outside: url('../../assets/img/cvPhotoBlurCirc400px.png');
+    shape-outside: circle();
   }
 }
 

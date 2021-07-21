@@ -3,8 +3,8 @@
 .card {
   font-size: $font-size-default;
   position: relative;
-  min-height: 50rem;
-  max-width: 35rem;
+  height: 50rem;
+  width: 35rem;
   margin: 0 auto;
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -77,10 +77,6 @@
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     border-radius: 4px;
-
-    &--1 {
-      background-image: url('../../assets/img/img1.jpg');
-    }
   }
   &__description {
   }
