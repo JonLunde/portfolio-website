@@ -22,7 +22,7 @@ export default function About() {
         </Helmet>
         <header>
           <div className="header">
-            <h1 className="heading-primary content-container">
+            <h1 className="heading-primary section-container">
               <span className="header__main heading-primary--main">
                 About me
               </span>
@@ -33,7 +33,7 @@ export default function About() {
           </div>
         </header>
         <main>
-          <div className="about content-container">
+          <div className="about section-container">
             <div className="about__text">
               <p>
                 Hello, I&apos;m Jon! I&apos;m a software devoloper currently

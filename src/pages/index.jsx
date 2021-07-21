@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Shared/Layout';
 import CardContainer from '../components/Home/CardContainer';
+import ProjectCard from '../components/Home/ProjectCard';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Helmet } from 'react-helmet';
 
@@ -27,10 +28,14 @@ export default function Home() {
           <header>
             <div className="header-intro">
               <h1 className="heading-intro">
-                <span className="header__main heading-intro--main">
-                  Hi, I&apos;m Jon!
-                </span>
-                <span className="header__sub heading-intro--sub">
+                <span className="heading-intro--main">Jon Lunde,</span>
+                <div className="heading-intro--sub">
+                  <span className="heading-intro__text">
+                    Delectus corporis quae ipsa tempore itaque fugiat facere
+                    quas velit magnam qui? corporis quae ipsa tempore itaque
+                    fugiat facere quas velit magnam qui? Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit.
+                  </span>
                   <StaticImage
                     className="heading-intro__img"
                     src="../images/cvPhotoBlurCirc400px.png"
@@ -38,16 +43,15 @@ export default function Home() {
                     loading="eager"
                     placeholder="none"
                   />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Delectus corporis quae ipsa tempore itaque fugiat facere quas
-                  velit magnam qui? corporis quae ipsa tempore itaque fugiat
-                  facere quas velit magnam qui?
-                </span>
+                </div>
               </h1>
             </div>
           </header>
           <main>
-            <CardContainer />
+            <CardContainer>
+              <ProjectCard />
+              <ProjectCard />
+            </CardContainer>
           </main>
         </div>
       </Layout>

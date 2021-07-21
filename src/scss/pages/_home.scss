@@ -2,21 +2,20 @@
 
 .header-intro {
   position: relative;
-  display: block;
-  height: 80rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 0rem 10rem 0rem;
   background-color: $color-gray-100;
   border-bottom: 1px solid rgba($color-black, 0.1);
 }
 
 .heading-intro {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30%;
+  max-width: $content-width;
 
   &--main {
-    font-size: 8rem;
+    display: block;
+    font-size: 6rem;
     font-weight: 900;
     letter-spacing: 0.4rem;
     color: $color-gray-700;
@@ -24,7 +23,13 @@
   }
 
   &--sub {
-    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+
+    font-size: 3rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
     line-height: 1.8;
@@ -33,13 +38,25 @@
     animation-fill-mode: backwards;
   }
 
+  &__text {
+  }
+
   &__img {
-    max-width: 400px;
-    float: right;
-    shape-outside: circle();
+    margin-top: 7rem;
+    width: 400px;
+    height: 400px;
+    // flex: 0 0 30rem;
+    // shape-margin: 5rem;
+    // margin-right: 10rem;
+    // float: right;
+    // shape-outside: circle();
   }
 }
 
 .cards-container {
-  width: 80%;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 5rem;
 }

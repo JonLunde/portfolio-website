@@ -29,7 +29,7 @@ export default function Projects({ data }) {
       <Layout>
         <header>
           <div className="header">
-            <h1 className="heading-primary content-container">
+            <h1 className="heading-primary section-container">
               <span className="header__main heading-primary--main">
                 Projects
               </span>
