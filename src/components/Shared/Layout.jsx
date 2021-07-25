@@ -7,7 +7,7 @@ import '../../scss/main.scss';
 export default function Layout({ children }) {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       {children}
       <Footer />
     </div>

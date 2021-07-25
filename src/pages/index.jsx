@@ -1,56 +1,72 @@
 import React from 'react';
 import Layout from '../components/Shared/Layout';
-import CardContainer from '../components/Home/CardContainer';
-import { StaticImage } from 'gatsby-plugin-image';
 import { Helmet } from 'react-helmet';
+import Project from '../components/Projects/Project';
+import Intro from '../components/Intro';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import { graphql } from 'gatsby';
 
-export default function Home() {
+export default function Home({ data }) {
+  console.log('TEST: ', data);
+  const { edges } = data.allMarkdownRemark;
   return (
-    <div>
-      <Layout>
-        <div>
-          <Helmet>
-            <html lang="en" />
-            <meta charSet="utf-8" />'
-            <meta
-              name="description"
-              content="Landing page for Jon Lunde's web development portfolio where I showcase some of my projects and myself."
-            ></meta>
-            <meta
-              name="keywords"
-              content="home, homepage, Jon Lunde, Jon, Magnar,Lunde, HTML, CSS, JavaScript, Typescript, React, Angular, SCSS, GitHub, Web, Development, Software, Gatsby, ExpressJs, Express, NodeJs, Node, Junior, Norway, C#, .NET, .NET Core, Java"
-            ></meta>
-            <meta name="author" content="Jon Lunde"></meta>
-            <title>Jon Lunde portfolio homepage for web development</title>
-            <link rel="canonical" href="https://www.lunde.dev" />
-          </Helmet>
-          <header>
-            <div className="header-intro">
-              <h1 className="heading-intro">
-                <span className="header__main heading-intro--main">
-                  Hi, I&apos;m Jon!
-                </span>
-                <span className="header__sub heading-intro--sub">
-                  <StaticImage
-                    className="heading-intro__img"
-                    src="../images/cvPhotoBlurCirc400px.png"
-                    alt="Portrait of me."
-                    loading="eager"
-                    placeholder="none"
-                  />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Delectus corporis quae ipsa tempore itaque fugiat facere quas
-                  velit magnam qui? corporis quae ipsa tempore itaque fugiat
-                  facere quas velit magnam qui?
-                </span>
-              </h1>
-            </div>
-          </header>
-          <main>
-            <CardContainer />
-          </main>
+    <Layout>
+      <Helmet>
+        <html lang="en" />
+        <meta charSet="utf-8" />'
+        <meta
+          name="description"
+          content="Landing page for Jon Lunde's web development portfolio where I showcase some of my projects and myself."
+        ></meta>
+        <meta
+          name="keywords"
+          content="home, homepage, Jon Lunde, Jon, Magnar,Lunde, HTML, CSS, JavaScript, Typescript, React, Angular, SCSS, GitHub, Web, Development, Software, Gatsby, ExpressJs, Express, NodeJs, Node, Junior, Norway, C#, .NET, .NET Core, Java"
+        ></meta>
+        <meta name="author" content="Jon Lunde"></meta>
+        <title>Jon Lunde portfolio homepage for web development</title>
+        <link rel="canonical" href="https://www.lunde.dev" />
+      </Helmet>
+      <header>
+        <Intro />
+      </header>
+      <main>
+        <About />
+        <div className="projects">
+          <div className="projects__container section-container">
+            <h2 className="heading-primary projects__title">Projects.</h2>
+            {edges.map(({ node }) => (
+              <Project key={node.id} frontmatter={node.frontmatter} html={node.html} />
+            ))}
+          </div>
         </div>
-      </Layout>
-    </div>
+        <Contact />
+      </main>
+    </Layout>
   );
 }
+
+export const query = graphql`
+  query GetAllProjects {
+    allMarkdownRemark(sort: { fields: frontmatter___order }) {
+      edges {
+        node {
+          frontmatter {
+            imageAlt
+            stack
+            title
+            gitUrl
+            image {
+              childImageSharp {
+                gatsbyImageData(blurredOptions: { width: 100 }, placeholder: BLURRED)
+              }
+            }
+            websiteUrl
+          }
+          html
+          id
+        }
+      }
+    }
+  }
+`;
