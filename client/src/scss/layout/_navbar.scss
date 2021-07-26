@@ -1,0 +1,79 @@
+@use "../abstracts/" as *;
+@use "../components/" as *;
+
+.navigation {
+  position: sticky;
+  top: 0px;
+  font-size: 2rem;
+  background-color: $color-gray-900;
+  height: 8rem;
+  z-index: 1;
+  padding: 0 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: $content-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__brand {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+  }
+
+  &__link {
+    &,
+    &:visited,
+    &:link {
+      display: inline-block;
+      text-decoration: none;
+      color: $color-white;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    height: 5rem;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    background-color: $color-gray-700;
+    padding: 1rem 2rem;
+    transition: all 0.3s;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &:hover {
+      // background-color: $color-primary-light;
+      transform: scale(1.1) rotate(2deg);
+      box-shadow: 0 1rem 1.5rem rgba($color-black, 0.2);
+    }
+
+    &:active {
+      transform: scale(1) rotate(0);
+      box-shadow: 0 1rem 1.5rem rgba($color-black, 0.1);
+    }
+  }
+
+  &__dark-mode {
+    font-size: 3rem;
+    // color: $color-yellow;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+}
