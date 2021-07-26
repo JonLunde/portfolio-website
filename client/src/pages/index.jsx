@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Layout from '../components/Shared/Layout';
 import { Helmet } from 'react-helmet';
 import Project from '../components/Projects/Project';
@@ -8,8 +8,15 @@ import Contact from '../components/Contact';
 import { graphql } from 'gatsby';
 
 export default function Home({ data }) {
-  console.log('TEST: ', data);
   const { edges } = data.allMarkdownRemark;
+  const aboutRef = useRef();
+  const projectsRef = useRef();
+  const contactRef = useRef();
+
+  function handleClick() {
+    console.log('TEST ', aboutRef);
+    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
   return (
     <Layout>
       <Helmet>
@@ -28,11 +35,11 @@ export default function Home({ data }) {
         <link rel="canonical" href="https://www.lunde.dev" />
       </Helmet>
       <header>
-        <Intro />
+        <Intro aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
       </header>
       <main>
-        <About />
-        <div className="projects">
+        <About aboutRef={aboutRef} />
+        <div className="projects" ref={projectsRef}>
           <div className="projects__container section-container">
             <h2 className="heading-primary projects__title">Projects.</h2>
             {edges.map(({ node }) => (
@@ -40,7 +47,7 @@ export default function Home({ data }) {
             ))}
           </div>
         </div>
-        <Contact />
+        <Contact contactRef={contactRef} />
       </main>
     </Layout>
   );

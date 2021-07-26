@@ -63,13 +63,14 @@
     }
   }
 
-  &--intro {
+  &--orange {
+    background-color: $color-secondary-700;
     background-image: linear-gradient(
-      to bottom right,
+      to bottom,
       $color-secondary-700 20%,
-      $color-black
+      rgba($color-black, 0.8)
     );
-    color: $color-primary-0;
+    color: $color-white;
 
     &::after {
           background-image: linear-gradient(
@@ -77,24 +78,6 @@
       $color-secondary-700 20%,
       $color-black
     );
-    }
-  }
-  
-  &--project {
-    background-color: $color-gray-700;
-    color: $color-white;
-
-    &::after {
-      background-color: $color-gray-900;
-    }
-  }
-
-  &--contact {
-    background-color: $color-gray-700;
-    color: $color-white;
-
-    &::after {
-      background-color: $color-gray-900;
     }
   }
 }

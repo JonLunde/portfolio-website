@@ -46,12 +46,12 @@ router.post('/contact', (req, res) => {
   transporter.sendMail(mail, (err, data) => {
     if (err) {
       res.json({
-        status: 'fail',
+        status: 'Error',
         error: err,
       });
     } else {
       res.json({
-        status: 'success',
+        status: 'Success',
       });
     }
   });

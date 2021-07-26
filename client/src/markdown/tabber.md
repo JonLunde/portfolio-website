@@ -4,19 +4,19 @@ order: 2
 title: 'Tabber'
 image: '../images/home.PNG'
 imageAlt: 'Home page'
-stack: 'React, ExpressJs, NodeJs, HTML/CSS, SCSS, GitHub'
-gitUrl: 'github.com/JonLunde/tabber'
+stack: 'React, ExpressJS, SCSS, GitHub'
+gitUrl: 'https://www.github.com/JonLunde/tabber'
 websiteUrl: ''
 ---
 
-Graded B.
-Group project where we developed an application that allow residents
-of a housing cooperative to upload expenses done on behalf of their housing
-cooperative and get reimbursed. A typical use case would be that a resident
-is paying for paint for a voluntary repainting of the entrance to the building.
-
-An intuitive and streamlined uploading process collects all the necessary data
-in multiple reactive forms and stores it in a state service. That data is used
-to generate an expense report that is sent to chosen residents in the housing
-cooperation for approval through signing. If all signees approve of the filed
-expense report it is sent to accounting for reimbursement.
+A personal project of mine stemming from the lack of good guitar tab creators on the web.
+It is an application providing the user with every tool needed to create tabs for any guitar
+piece out there. It has support for chords and all kinds of notations. The tabs are also 
+interactable for easy rearrangement and customization. The tuning system makes it possible
+to transpose and transcribe songs in any key.  
+\
+It is built with React and instead of using the Create-React-App setup i chose to build my own toolchain. It has given me great insight into Webpack and its capabilities. As well as transposing with Babel, linting with ESLint and code formatting with Prettier. The project has given me valuable experience with keeping a relatively complex 
+state with the useReducer hook and has generally strengthened my knowledge of React hooks.
+I've had a big breakthrough in my knowledge of CSS and really fell in love with SCSS. 
+The backend is running on ExpressJS and I plan to incorporate a login and authentication system for
+storing guitar tabs on the server. Stay tuned.

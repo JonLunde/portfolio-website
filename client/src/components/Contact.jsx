@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Contact() {
+export default function Contact({ contactRef }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -37,11 +37,16 @@ export default function Contact() {
   }
 
   return (
-    <div className="contact section-container">
+    <div className="contact section-container" ref={contactRef}>
+      <h2 className="heading-primary contact__title">Contact me.</h2>
       <div className="contact__container">
-        <h2 className="contact__title">
-          Shoot me an email <a href="">here</a> or fill out the contact form below!
-        </h2>
+        <span className="contact__subtitle">
+          Shoot me an email{' '}
+          <a className="contact__link" href="mailto: jon@lunde.dev">
+            here
+          </a>{' '}
+          or fill out the form below!
+        </span>
         <form className="contact__form" id="contact-form" onSubmit={handleSubmit} method="POST">
           <div className="contact__form-group">
             <input
@@ -73,11 +78,12 @@ export default function Contact() {
               placeholder="Message"
               value={message}
               onChange={handleOnChange}
+              autoComplete="nope..."
             ></textarea>
             <label className="contact__form-label">Message</label>
           </div>
-          <button className="contact__submit btn btn--contact" type="submit">
-            Submit
+          <button className="contact__submit btn btn--white" type="submit">
+            Send
           </button>
         </form>
       </div>

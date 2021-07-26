@@ -16,19 +16,19 @@ export default function Project(props) {
 
       <div className="project__text-container">
         <h2 className="heading-secondary project__title">{title}</h2>
-        <div className="project__stack">Stack: {stack}</div>
         <div className="project__description" dangerouslySetInnerHTML={{ __html: text }}></div>
+        <div className="project__stack">Stack: {stack}</div>
         <div className="project__buttons">
           {gitUrl && (
-            <button type="button" href={gitUrl} className="btn btn__project">
+            <a href={gitUrl} className="btn btn--white" target="_blank" rel="noopener noreferrer">
               CODE
-            </button>
+            </a>
           )}
 
           {websiteUrl && (
-            <button type="button" href={websiteUrl} className="btn btn__project">
+            <a href={websiteUrl} className="btn btn--white" target="_blank" rel="noopener noreferrer">
               Website
-            </button>
+            </a>
           )}
         </div>
       </div>
