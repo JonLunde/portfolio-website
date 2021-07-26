@@ -10,15 +10,15 @@ export default function About({ aboutRef }) {
           <div className="about__speech-bubble">
             <span className="about__text">
               Hey! I'm Jon, an aspiring web and software developer with a passion for creating enjoyable user
-              experiences and making people's life better through code! I find great motivation in working together with
-              others towards a common goal, this has always been a big part of my life through my previous working
-              experiences and playing football since I was a kid. From and currently based in Oslo, Norway, where I have
-              just completed my bachelor's degree in Information Technology at OsloMet!
+              experiences and making people's lives better through code! I find great motivation in working together
+              with others towards a common goal, this has always been a big part of my life through my previous working
+              experiences and playing football since I was a kid. From, and currently based in Oslo, Norway, where I
+              have just completed my bachelor's degree in Information Technology at OsloMet!
               <br />
-              <br />I enjoy writing Javascript, and especially React, but I'm also well versed with Angular and
-              Typescript as I spent the last six months working with them for my bachelor's project. For backend I enjoy
-              ExpressJS and .NET Core. In my sparetime I like to play football, guitar, video games and dabble in
-              various technolgies I find interesting, the technolgical rabbit hole I currently find myself in is
+              <br />I enjoy writing Javascript and especially React, but I'm also well versed with Angular and
+              Typescript as I spent the last six months working with them for my bachelor's project. For the backend, I
+              prefer ExpressJS and .NET Core. In my spare time I like to play football, guitar, video games, and dabble
+              in various technologies I find interesting. The technological rabbit hole I currently find myself in is
               cryptocurrency.
             </span>
             <svg
