@@ -20,8 +20,6 @@ const transport = {
   },
 };
 
-console.log('Login creds: ', creds);
-
 const transporter = nodemailer.createTransport(transport);
 
 transporter.verify((error, success) => {
@@ -32,14 +30,14 @@ transporter.verify((error, success) => {
   }
 });
 
-router.post('/send', (req, res) => {
+router.post('/contact', (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
   const message = req.body.message;
   const content = `Name: ${name} \nEmail: ${email} \nMessage:\n${message} `;
 
   const mail = {
-    from: email,
+    from: 'jon@lunde.dev',
     to: 'jon@lunde.dev',
     subject: 'New Message from Contact Form',
     text: content,

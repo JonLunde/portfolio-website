@@ -8,7 +8,7 @@ export default function Contact() {
   function handleSubmit(event) {
     const emailBody = { name: name, email: email, message: message };
     event.preventDefault();
-    fetch('http://localhost:3002/send', {
+    fetch('http://localhost:3002/contact', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(emailBody),
@@ -34,13 +34,6 @@ export default function Contact() {
         console.log('Switch Error!');
         break;
     }
-  }
-
-  function test() {
-    fetch('http://localhost:3002/test')
-      .then((res) => res)
-      .then((data) => console.log('Working! ', data))
-      .catch((error) => console.log('Error... ', error));
   }
 
   return (
