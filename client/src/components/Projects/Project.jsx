@@ -10,12 +10,13 @@ export default function Project(props) {
 
   return (
     <div className="project">
-      <h2 className="heading-secondary project__title">{title}</h2>
-      <div className="project__stack">Stack: {stack}</div>
       <div className="project__image-container">
-        <GatsbyImage className="project__image" image={getImage(image)} alt={imageAlt} />
+        <GatsbyImage imgClassName="project__image" image={getImage(image)} alt={imageAlt} />
       </div>
+
       <div className="project__text-container">
+        <h2 className="heading-secondary project__title">{title}</h2>
+        <div className="project__stack">Stack: {stack}</div>
         <div className="project__description" dangerouslySetInnerHTML={{ __html: text }}></div>
         <div className="project__buttons">
           {gitUrl && (

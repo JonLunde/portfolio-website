@@ -64,6 +64,23 @@
   }
 
   &--intro {
+    background-image: linear-gradient(
+      to bottom right,
+      $color-secondary-700 20%,
+      $color-black
+    );
+    color: $color-primary-0;
+
+    &::after {
+          background-image: linear-gradient(
+      to bottom right,
+      $color-secondary-700 20%,
+      $color-black
+    );
+    }
+  }
+  
+  &--project {
     background-color: $color-gray-700;
     color: $color-white;
 
@@ -71,8 +88,8 @@
       background-color: $color-gray-900;
     }
   }
-  
-  &--project {
+
+  &--contact {
     background-color: $color-gray-700;
     color: $color-white;
 
