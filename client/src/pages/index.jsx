@@ -39,8 +39,8 @@ export default function Home({ data }) {
       </header>
       <main>
         <About aboutRef={aboutRef} />
-        <div className="projects" ref={projectsRef}>
-          <div className="projects__container section-container">
+        <div className="projects">
+          <div className="projects__container section-container" ref={projectsRef}>
             <h2 className="heading-primary projects__title">Projects.</h2>
             {edges.map(({ node }) => (
               <Project key={node.id} frontmatter={node.frontmatter} html={node.html} />

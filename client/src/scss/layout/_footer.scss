@@ -27,6 +27,12 @@
 
   &__logo {
     margin-bottom: 3rem;
+    transition: all 0.2s;
+
+    
+    &:hover {
+      transform: translateY(-0.4rem);
+    }
   }
 
   &__legal {

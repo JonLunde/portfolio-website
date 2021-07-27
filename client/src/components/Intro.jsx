@@ -19,13 +19,13 @@ export default function Intro({ aboutRef, projectsRef, contactRef }) {
         />
         <div className="intro__button-container">
           <a className="btn btn--orange" onClick={() => aboutRef.current.scrollIntoView({ behavior: 'smooth' })}>
-            About Me.
+            About Me
           </a>
           <a className="btn btn--orange" onClick={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })}>
-            Projects.
+            Projects
           </a>
           <a className="btn btn--orange" onClick={() => contactRef.current.scrollIntoView({ behavior: 'smooth' })}>
-            Contact me.
+            Contact me
           </a>
         </div>
         <div className="intro__social-container">

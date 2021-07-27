@@ -2,11 +2,11 @@
 slug: '/projects/tabber'
 order: 2
 title: 'Tabber'
-image: '../images/home.PNG'
+image: '../images/tabber2.png'
 imageAlt: 'Home page'
 stack: 'React, ExpressJS, SCSS, GitHub'
 gitUrl: 'https://www.github.com/JonLunde/tabber'
-websiteUrl: ''
+websiteUrl: 'https://tabber.netlify.app/'
 ---
 
 A personal project of mine stemming from the lack of good guitar tab creators on the web.

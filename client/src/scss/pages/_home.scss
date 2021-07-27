@@ -45,7 +45,7 @@
     font-weight: 700;
     background-image: linear-gradient(
       to bottom,
-      $color-secondary-500 20%,
+      $color-secondary-500 30%,
       $color-black 90%
     );
     -webkit-background-clip: text;
@@ -83,7 +83,7 @@
 }
 
 .about{
-  height: 110vh;
+  height: 120vh;
   background-image: linear-gradient(to right bottom, $color-secondary-0, #fff);
   display: flex;
   justify-content: center;
@@ -108,28 +108,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // height: 60%;
-    height: 61rem;
   }
 
   &__speech-bubble {
     flex: 1 1 70%;
     position: relative;
-    display: inline-block;
-    height: 100%;
   }
 
   &__svg {
-    width: 100%;
-    height: 100%;
-  }
-
-  &__text {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 3rem 9rem 3rem 5rem;
+    width: 100%;
+    height: 100%;
+  }
+  
+  &__text {
+    position: relative;
     z-index: 1;
+    // top: 0;
+    // left: 0;
+    // padding: 3rem 9rem 3rem 5rem;
+    padding: 3rem 9rem 3rem 5rem;
     color: $color-gray-0;
     font-size: 2.5rem;
   }
@@ -138,6 +138,10 @@
     flex: 0 1 10rem;
     display: inline-block;
     align-self: flex-end;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 }
 
@@ -173,6 +177,12 @@
   display: flex;
   justify-content: center;
   column-gap: 3rem;
+
+  @media only screen and (max-width: 1500px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 4rem;
+  }
   
   &:not(:last-child) {
     margin-bottom: 15rem;
@@ -181,17 +191,22 @@
 
   &__image-container {
     flex: 1;
-    max-width: 90rem;
+    max-width: 100rem;
     align-self: center;
   }
   
   &__image {
     border-radius: $border-radius-1;
+    max-width: 100rem;
   }
   
   &__text-container {
     flex: 1;
     max-width: 70ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 3rem;
   }
 
   &__title {
@@ -203,7 +218,6 @@
 
   &__description {
     color: $color-gray-0;
-    margin-top: 2rem;
     font-size: 2rem;
     hyphens: auto;
     -ms-hyphens: auto;
@@ -213,12 +227,13 @@
   
   &__stack {
     color: $color-secondary-500;
-    margin-top: 2rem;
     font-style: italic;
+    text-align: center;
   }
   
   &__buttons {
-    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -231,7 +246,8 @@
 
   &__container {
     width: 60%;
-    height: 72rem;
+    height: 80rem;
+    // height: 70%;
     padding: 3rem 5rem;
     background-image: linear-gradient(to right bottom, $color-primary-700, $color-primary-900);
     border-radius: $border-radius-2;
@@ -274,7 +290,7 @@
   }
 
   &__form {
-    height: 60rem;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

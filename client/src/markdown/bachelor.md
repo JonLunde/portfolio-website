@@ -2,9 +2,9 @@
 slug: '/projects/bachelors-project'
 order: 1
 title: "Bachelor's project"
-image: '../images/home.PNG'
+image: '../images/BachelorHomeNo24k.png'
 imageAlt: 'Home page'
-stack: 'Angular, Typescript, .NET Core, C#, MySQL, Bootstrap, GitHub'
+stack: 'Angular, Typescript, Jasmine, .NET Core, C#, MySQL, Bootstrap, GitHub'
 gitUrl: ''
 websiteUrl: ''
 ---
@@ -24,4 +24,6 @@ If the user approves the PDF and every validation is passed, the generated PDF i
 \
 Aside from the huge benefit in acquired  coding skills, this project was also a good practice in planning and working as a team over a longer period. In the beginning we made a minimal viable product (MVP) and wireframes to help us define the requirements specifications. To improve our requirements we had multiple iterations where we made user histories, drew use case diagrams and sequence diagrams. We finished up the planning phase with multiple iterations of prototyping in Figma. All this has provided us invaluable experience in planning a project and tools to use in later projects. We were also conscious of using an agile methodology throughout the development phase and went with Kanban as we felt it fit our project better.  
 \
-The application is expected to go into production in the late summer of 2021.
+The application is expected to go into production in the late summer of 2021.  
+\
+PS: There is no GitHub link as the client wants to keep the codebase private.

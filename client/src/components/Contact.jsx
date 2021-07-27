@@ -37,8 +37,10 @@ export default function Contact({ contactRef }) {
   }
 
   return (
-    <div className="contact section-container" ref={contactRef}>
-      <h2 className="heading-primary contact__title">Contact me.</h2>
+    <div className="contact section-container">
+      <h2 className="heading-primary contact__title" ref={contactRef}>
+        Contact me.
+      </h2>
       <div className="contact__container">
         <span className="contact__subtitle">
           Shoot me an email{' '}

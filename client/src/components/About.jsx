@@ -3,24 +3,11 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 export default function About({ aboutRef }) {
   return (
-    <div className="about" ref={aboutRef}>
-      <div className="about__container section-container">
+    <div className="about">
+      <div className="about__container section-container" ref={aboutRef}>
         <h1 className="heading-primary about__title">About me.</h1>
         <div className="about__content">
           <div className="about__speech-bubble">
-            <span className="about__text">
-              Hey! I'm Jon, an aspiring web and software developer with a passion for creating enjoyable user
-              experiences and making people's lives better through code! I find great motivation in working together
-              with others towards a common goal, this has always been a big part of my life through my previous working
-              experiences and playing football since I was a kid. From, and currently based in Oslo, Norway, where I
-              have just completed my bachelor's degree in Information Technology at OsloMet!
-              <br />
-              <br />I enjoy writing Javascript and especially React, but I'm also well versed with Angular and
-              Typescript as I spent the last six months working with them for my bachelor's project. For the backend, I
-              prefer ExpressJS and .NET Core. In my spare time I like to play football, guitar, video games, and dabble
-              in various technologies I find interesting. The technological rabbit hole I currently find myself in is
-              cryptocurrency.
-            </span>
             <svg
               className="about__svg"
               viewBox="0 0 900 400"
@@ -32,6 +19,21 @@ export default function About({ aboutRef }) {
                 fill="#006ACC"
               />
             </svg>
+            <div className="about__text">
+              <span>
+                Hey! I'm Jon, an aspiring web and software developer with a passion for creating enjoyable user
+                experiences and making people's lives better through code! I find great motivation in working together
+                with others towards a common goal, this has always been a big part of my life through my previous
+                working experiences and playing football since I was a kid. From, and currently based in Oslo, Norway,
+                where I have just completed my bachelor's degree in Information Technology at OsloMet!
+                <br />
+                <br />I enjoy writing Javascript and especially React, but I'm also well versed with Angular and
+                Typescript as I spent the last six months working with them for my bachelor's project. For the backend,
+                I prefer ExpressJS and .NET Core. In my spare time I like to play football, guitar, video games, and
+                dabble in various technologies I find interesting. The technological rabbit hole I currently find myself
+                in is cryptocurrency.
+              </span>
+            </div>
           </div>
           <StaticImage
             className="about__image"
