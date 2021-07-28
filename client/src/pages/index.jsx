@@ -8,15 +8,12 @@ import Contact from '../components/Contact';
 import { graphql } from 'gatsby';
 
 export default function Home({ data }) {
+  console.log('DATA: ', data);
   const { edges } = data.allMarkdownRemark;
   const aboutRef = useRef();
   const projectsRef = useRef();
   const contactRef = useRef();
 
-  function handleClick() {
-    console.log('TEST ', aboutRef);
-    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
-  }
   return (
     <Layout>
       <Helmet>
@@ -59,16 +56,11 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
-            imageAlt
             stack
             title
             gitUrl
-            image {
-              childImageSharp {
-                gatsbyImageData(blurredOptions: { width: 100 }, placeholder: BLURRED)
-              }
-            }
             websiteUrl
+            imageFolder
           }
           html
           id

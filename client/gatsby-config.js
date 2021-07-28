@@ -8,7 +8,7 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     'gatsby-plugin-image',
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingId: 'G-KSYC2WFXV3',
       },
