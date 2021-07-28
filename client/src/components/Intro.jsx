@@ -6,11 +6,11 @@ export default function Intro({ aboutRef, projectsRef, contactRef }) {
   return (
     <div className="intro">
       <div className="intro__container">
-        <h1 className="intro__title">
-          Jon Lunde<span className="intro__title__blinking">_</span>
-        </h1>
-
         <div className="intro__inline-wrapper">
+          <h1 className="intro__title">
+            Jon Lunde<span className="intro__title__blinking">_</span>
+          </h1>
+
           <h2 className="intro__subtitle">Web developer. Designer. Problem Solver.</h2>
         </div>
 

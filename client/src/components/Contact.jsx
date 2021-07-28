@@ -42,14 +42,14 @@ export default function Contact({ contactRef }) {
         Contact me.
       </h2>
       <div className="contact__container">
-        <span className="contact__subtitle">
-          Shoot me an email{' '}
-          <a className="contact__link" href="mailto: jon@lunde.dev">
-            here
-          </a>{' '}
-          or fill out the form below!
-        </span>
         <form className="contact__form" id="contact-form" onSubmit={handleSubmit} method="POST">
+          <span className="contact__form-title">
+            Shoot me an email{' '}
+            <a className="contact__link" href="mailto: jon@lunde.dev">
+              here
+            </a>{' '}
+            or fill out the form below!
+          </span>
           <div className="contact__form-group">
             <input
               id="name"
