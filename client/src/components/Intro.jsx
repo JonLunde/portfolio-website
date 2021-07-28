@@ -9,7 +9,11 @@ export default function Intro({ aboutRef, projectsRef, contactRef }) {
         <h1 className="intro__title">
           Jon Lunde<span className="intro__title__blinking">_</span>
         </h1>
-        <h2 className="intro__subtitle">Web developer. Designer. Problem Solver.</h2>
+
+        <div className="intro__inline-wrapper">
+          <h2 className="intro__subtitle">Web developer. Designer. Problem Solver.</h2>
+        </div>
+
         <StaticImage
           className="intro__image"
           src="../images/cvPhotoBlurCirc.png"
@@ -18,13 +22,13 @@ export default function Intro({ aboutRef, projectsRef, contactRef }) {
           placeholder="none"
         />
         <div className="intro__button-container">
-          <a className="btn btn--orange" onClick={() => aboutRef.current.scrollIntoView({ behavior: 'smooth' })}>
+          <a className="btn btn--intro" onClick={() => aboutRef.current.scrollIntoView({ behavior: 'smooth' })}>
             About Me
           </a>
-          <a className="btn btn--orange" onClick={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })}>
+          <a className="btn btn--intro" onClick={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })}>
             Projects
           </a>
-          <a className="btn btn--orange" onClick={() => contactRef.current.scrollIntoView({ behavior: 'smooth' })}>
+          <a className="btn btn--intro" onClick={() => contactRef.current.scrollIntoView({ behavior: 'smooth' })}>
             Contact me
           </a>
         </div>

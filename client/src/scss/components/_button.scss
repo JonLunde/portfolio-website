@@ -12,6 +12,7 @@
     font-size: $font-size-default;
     font-weight: 500;
     text-transform: uppercase;
+    text-align: center;
     text-decoration: none;
     transition: all 0.2s ease-out;
   }
@@ -63,7 +64,7 @@
     }
   }
 
-  &--orange {
+  &--intro {
     background-color: $color-secondary-700;
     background-image: linear-gradient(
       to bottom,
@@ -78,6 +79,12 @@
       $color-secondary-700 20%,
       $color-black
     );
+    }
+
+    @media only screen and (max-height: 53.125em) {
+      font-size: 1.5rem;
+      padding: 1.5rem 3rem;
+      // width: 20rem;
     }
   }
 }
