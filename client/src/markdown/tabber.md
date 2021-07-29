@@ -2,7 +2,7 @@
 slug: '/projects/tabber'
 order: 2
 title: 'Tabber'
-image: '../images/tabber2.png'
+image: '../images/tabber1.png'
 imageAlt: 'Home page'
 stack: 'React, ExpressJS, SCSS, GitHub'
 gitUrl: 'https://www.github.com/JonLunde/tabber'
