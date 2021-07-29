@@ -2,7 +2,7 @@
 slug: '/projects/bachelors-project'
 order: 1
 title: "Bachelor's project"
-image: '../images/BachelorHome.png'
+image: '../images/bachelorHome.png'
 imageAlt: 'Home page'
 stack: 'Angular, Typescript, Jasmine, .NET Core, C#, MySQL, Bootstrap, GitHub'
 gitUrl: ''
