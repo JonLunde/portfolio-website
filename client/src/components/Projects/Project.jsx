@@ -15,35 +15,23 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 
 export default function Project(props) {
   const {
-    frontmatter: { title, images, imageAlt, stack, gitUrl, websiteUrl },
+    frontmatter: { title, image1, image2, image3, imageAlt1, imageAlt2, imageAlt3, stack, gitUrl, websiteUrl },
     html: text,
   } = props;
 
-  // SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+  let imageArray = [image1, image2, image3];
+  imageArray = imageArray.filter((image) => image !== null);
+  let imageAltArray = [imageAlt1, imageAlt2, imageAlt3];
 
-  // <StaticQuery
-  //   query={graphql`
-  // query GetImages {
-  //   allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, relativeDirectory: {eq: "${imageFolder}"}}) {
-  //     edges {
-  //       node {
-  //         childImageSharp {
-  //           gatsbyImageData(blurredOptions: { width: 100 }, placeholder: BLURRED)
-  //         }
-  //       }
-  //     }
-  //   }
-  // }`}
-  // />;
-
-  return (
-    <div className="project">
-      <div className="project__image-container">
-        <button class="project__swipe project__swipe--prev">
+  // render images with navigation and touchscroll if there are more than one.
+  const renderImages =
+    imageArray.length > 1 ? (
+      <div>
+        <button className="project__swipe project__swipe--prev">
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <button class="project__swipe project__swipe--next">
+        <button className="project__swipe project__swipe--next">
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
         <Swiper
@@ -57,14 +45,22 @@ export default function Project(props) {
           }}
           pagination={{ clickable: true }}
         >
-          <SwiperSlide>
-            <GatsbyImage imgClassName="project__image" image={getImage(image1)} alt={imageAlt} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <GatsbyImage imgClassName="project__image" image={getImage(image2)} alt={imageAlt} />
-          </SwiperSlide>
+          {imageArray.map((image, i) => (
+            <SwiperSlide key={i}>
+              <GatsbyImage imgClassName="project__image" image={getImage(image)} alt={imageAltArray[i]} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
+    ) : (
+      imageArray.map((image, i) => (
+        <GatsbyImage imgClassName="project__image" image={getImage(image)} alt={imageAltArray[i]} />
+      ))
+    );
+
+  return (
+    <div className="project">
+      <div className="project__image-container">{renderImages}</div>
 
       <div className="project__text-container">
         <h2 className="heading-secondary project__title">{title}</h2>

@@ -2,7 +2,12 @@
 slug: '/projects/tabber'
 order: 2
 title: 'Tabber'
-imageFolder: 'Tabber'
+image1: '../images/projects/tabber/tabber1.png'
+image2: '../images/projects/tabber/tabber2.png'
+image3: '../images/projects/tabber/tabber3.png'
+imageAlt1: 'Creating one tab with sidebar open.'
+imageAlt2: 'Creating two tabs with sidebar closed.'
+imageAlt3: 'Comparing the two tabs to the generated and exported text file.'
 stack: 'React, ExpressJS, SCSS, GitHub'
 gitUrl: 'https://www.github.com/JonLunde/tabber'
 websiteUrl: 'https://tabber.netlify.app/'

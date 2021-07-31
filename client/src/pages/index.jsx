@@ -60,7 +60,24 @@ export const query = graphql`
             title
             gitUrl
             websiteUrl
-            imageFolder
+            imageAlt1
+            imageAlt2
+            imageAlt3
+            image1 {
+              childImageSharp {
+                gatsbyImageData(blurredOptions: { width: 100 }, placeholder: BLURRED)
+              }
+            }
+            image2 {
+              childImageSharp {
+                gatsbyImageData(blurredOptions: { width: 100 }, placeholder: BLURRED)
+              }
+            }
+            image3 {
+              childImageSharp {
+                gatsbyImageData(blurredOptions: { width: 100 }, placeholder: BLURRED)
+              }
+            }
           }
           html
           id
