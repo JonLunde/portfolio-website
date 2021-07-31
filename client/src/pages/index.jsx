@@ -21,17 +21,16 @@ export default function Home({ data }) {
     <Layout>
       <Helmet>
         <html lang="en" />
-        <meta charSet="utf-8" />'
+        <meta charSet="utf-8" />'<title>Jon Lunde - Developer Portfolio</title>
         <meta
           name="description"
-          content="Landing page for Jon Lunde's web development portfolio where I showcase some of my projects and myself."
+          content="Welcome to my portfolio where I showcase some of my projects and myself!"
         ></meta>
         <meta
           name="keywords"
-          content="home, homepage, Jon Lunde, Jon, Magnar,Lunde, HTML, CSS, JavaScript, Typescript, React, Angular, SCSS, GitHub, Web, Development, Software, Gatsby, ExpressJs, Express, NodeJs, Node, Junior, Norway, C#, .NET, .NET Core, Java"
+          content="portfolio, Jon Lunde, Jon Magnar Lunde, Jon, Magnar,Lunde, HTML, CSS, JavaScript, Typescript, React, Angular, SCSS, GitHub, Web, Development, Software, Gatsby, ExpressJs, Express, NodeJs, Node, Junior, Junior devoloper, Oslo, Norway, C#, .NET, .NET Core, Java"
         ></meta>
         <meta name="author" content="Jon Lunde"></meta>
-        <title>Jon Lunde portfolio homepage for web development</title>
         <link rel="canonical" href="https://www.lunde.dev" />
       </Helmet>
       <header>
