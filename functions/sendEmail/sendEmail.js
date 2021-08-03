@@ -29,7 +29,7 @@ exports.handler = async function (event, context) {
   const mail = {
     from: 'jon@lunde.dev',
     to: 'jon@lunde.dev',
-    subject: 'New Message from Contact Form',
+    subject: 'New Message from Contact Form ',
     text: content,
   };
 
