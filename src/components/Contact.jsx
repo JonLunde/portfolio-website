@@ -6,9 +6,9 @@ export default function Contact({ contactRef }) {
   const [message, setMessage] = useState('');
 
   function handleSubmit(event) {
-    const emailBody = { name: name, email: email, message: message };
+    const emailBody = { name, email, message };
     event.preventDefault();
-    fetch('http://localhost:3002/contact', {
+    fetch('/.netlify/functions/sendEmail', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(emailBody),
@@ -59,7 +59,9 @@ export default function Contact({ contactRef }) {
               value={name}
               onChange={handleOnChange}
             />
-            <label className="contact__form-label">Name</label>
+            <label className="contact__form-label" htmlFor="name">
+              Name
+            </label>
           </div>
           <div className="contact__form-group">
             <input
@@ -70,7 +72,9 @@ export default function Contact({ contactRef }) {
               value={email}
               onChange={handleOnChange}
             />
-            <label className="contact__form-label">Email</label>
+            <label className="contact__form-label" htmlFor="email">
+              Email
+            </label>
           </div>
           <div className="contact__form-group">
             <textarea
@@ -81,8 +85,10 @@ export default function Contact({ contactRef }) {
               value={message}
               onChange={handleOnChange}
               autoComplete="nope..."
-            ></textarea>
-            <label className="contact__form-label">Message</label>
+            />
+            <label className="contact__form-label" htmlFor="message">
+              Message
+            </label>
           </div>
           <button className="contact__submit btn btn--white" type="submit">
             Send

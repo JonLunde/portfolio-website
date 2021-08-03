@@ -41,7 +41,7 @@ export default function Intro({ aboutRef, projectsRef, contactRef }) {
             className="intro__social"
           >
             <StaticImage
-              src="../../images/github.png"
+              src="../images/github.png"
               type="image/png"
               alt="Github logo"
               loading="lazy"
@@ -57,7 +57,7 @@ export default function Intro({ aboutRef, projectsRef, contactRef }) {
             className="intro__social"
           >
             <StaticImage
-              src="../../images/linkedIn.png"
+              src="../images/linkedIn.png"
               type="image/png"
               alt="LinkedIn logo"
               loading="lazy"
