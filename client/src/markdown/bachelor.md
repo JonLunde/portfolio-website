@@ -2,8 +2,12 @@
 slug: '/projects/bachelors-project'
 order: 1
 title: "Bachelor's project"
-image: '../images/bachelorHome.png'
-imageAlt: 'Home page'
+image1: '../images/projects/bachelor/bachelorHome.png' 
+image2: null
+image3: null
+imageAlt1: 'Home screen of the expense report generator.'
+imageAlt2: null
+imageAlt3: null
 stack: 'Angular, Typescript, Jasmine, .NET Core, C#, MySQL, Bootstrap, GitHub'
 gitUrl: ''
 websiteUrl: ''
