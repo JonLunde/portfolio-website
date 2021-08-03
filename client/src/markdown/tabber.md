@@ -2,9 +2,9 @@
 slug: '/projects/tabber'
 order: 2
 title: 'Tabber'
-image1: '../images/projects/tabber/tabber1.png'
-image2: '../images/projects/tabber/tabber2.png'
-image3: '../images/projects/tabber/tabber3.png'
+image1: '../images/Projects/Tabber/tabber1.png'
+image2: '../images/Projects/Tabber/tabber2.png'
+image3: '../images/Projects/Tabber/tabber3.png'
 imageAlt1: 'Creating one tab with sidebar open.'
 imageAlt2: 'Creating two tabs with sidebar closed.'
 imageAlt3: 'Comparing the two tabs to the generated and exported text file.'
