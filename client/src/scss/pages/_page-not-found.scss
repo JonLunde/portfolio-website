@@ -1,0 +1,29 @@
+@use '../abstracts/' as *;
+
+.page-not-found {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, $color-primary-700, $color-primary-900);
+    text-align: center;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title{
+        font-size: 20rem;
+        color: $color-secondary-500;
+        line-height: 18rem;
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        color: $color-white;
+    }
+    &__button {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+    }
+}
