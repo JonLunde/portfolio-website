@@ -196,8 +196,9 @@
 
   &__image-container {
     position: relative;
-    flex: 0 1 auto;
-    max-width: 100rem;
+    flex: 0 1 100rem;
+    // max-width: 100rem;
+    width: 100rem;
     align-self: center;
   }
   
@@ -230,8 +231,9 @@
   
   
   &__text-container {
-    flex: 1 1 auto;
-    max-width: 70ch;
+    flex: 0 1 auto;
+    max-width: 60ch;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
