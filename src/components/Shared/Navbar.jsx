@@ -22,11 +22,7 @@ function Navbar() {
             <span>About Me</span>
           </Link>
         </div>
-        <button
-          type="button"
-          className="navigation__dark-mode"
-          aria-label="Dark Mode Button"
-        >
+        <button type="button" className="navigation__dark-mode" aria-label="Dark Mode Button">
           <FontAwesomeIcon icon={faMoon} />
         </button>
       </div>

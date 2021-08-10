@@ -8,7 +8,9 @@ export default function NotFound() {
       <span className="page-not-found__subtitle">Sorry, but the requested page was not found</span>
 
       <Link to="/">
-        <button className="page-not-found__button btn btn--white">Homepage</button>
+        <button type="button" className="page-not-found__button btn btn--white">
+          Homepage
+        </button>
       </Link>
     </div>
   );

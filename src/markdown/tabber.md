@@ -17,7 +17,7 @@ A personal project of mine stemming from the lack of good guitar tab creators on
 It is an application providing the user with every tool needed to create tabs for any guitar
 piece out there. It has support for chords and all kinds of notations. The tabs are also 
 interactable for easy rearrangement and customization. The tuning system makes it possible
-to transpose and transcribe songs in any key. To save your tabs you can export them to a text file!
+to transpose and transcribe songs in any key. To save your tabs you can export them to a text file.
 The ExpressJS server receives all the data collected in the Tabber app and generates a text file which
 is fetched and downloaded to the user's computer.
 \

@@ -1,14 +1,13 @@
 import React, { useRef } from 'react';
-import Layout from '../components/Shared/Layout';
+import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import Layout from '../components/Shared/Layout';
 import Project from '../components/Projects/Project';
 import Intro from '../components/Intro';
 import About from '../components/About';
 import Contact from '../components/Contact';
-import { graphql } from 'gatsby';
 
 export default function Home({ data }) {
-  console.log('DATA: ', data);
   const { edges } = data.allMarkdownRemark;
   const aboutRef = useRef();
   const projectsRef = useRef();
@@ -18,16 +17,14 @@ export default function Home({ data }) {
     <Layout>
       <Helmet>
         <html lang="en" />
-        <meta charSet="utf-8" />'<title>Jon Lunde - Developer Portfolio</title>
-        <meta
-          name="description"
-          content="Welcome to my portfolio where I showcase some of my projects and myself!"
-        ></meta>
+        <meta charSet="utf-8" />
+        &apos;<title>Jon Lunde - Developer Portfolio</title>
+        <meta name="description" content="Welcome to my portfolio where I showcase some of my projects and myself!" />
         <meta
           name="keywords"
           content="portfolio, Jon Lunde, Jon Magnar Lunde, Jon, Magnar,Lunde, HTML, CSS, JavaScript, Typescript, React, Angular, SCSS, GitHub, Web, Development, Software, Gatsby, ExpressJs, Express, NodeJs, Node, Junior, Junior devoloper, Oslo, Norway, C#, .NET, .NET Core, Java"
-        ></meta>
-        <meta name="author" content="Jon Lunde"></meta>
+        />
+        <meta name="author" content="Jon Lunde" />
         <link rel="canonical" href="https://www.lunde.dev" />
       </Helmet>
       <header>
@@ -63,16 +60,19 @@ export const query = graphql`
             imageAlt2
             imageAlt3
             image1 {
+              id
               childImageSharp {
                 gatsbyImageData(blurredOptions: { width: 100 }, placeholder: BLURRED)
               }
             }
             image2 {
+              id
               childImageSharp {
                 gatsbyImageData(blurredOptions: { width: 100 }, placeholder: BLURRED)
               }
             }
             image3 {
+              id
               childImageSharp {
                 gatsbyImageData(blurredOptions: { width: 100 }, placeholder: BLURRED)
               }

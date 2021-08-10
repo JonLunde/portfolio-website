@@ -1,5 +1,4 @@
 import React from 'react';
-import { StaticQuery } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -22,22 +21,22 @@ export default function Project(props) {
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   let imageArray = [image1, image2, image3];
   imageArray = imageArray.filter((image) => image !== null);
-  let imageAltArray = [imageAlt1, imageAlt2, imageAlt3];
+  const imageAltArray = [imageAlt1, imageAlt2, imageAlt3];
 
-  // render images with navigation and touchscroll if there are more than one.
+  // Render images with navigation and touchscroll if there are more than one.
   const renderImages =
     imageArray.length > 1 ? (
       <div>
-        <button className="project__swipe project__swipe--prev">
+        <button type="button" className="project__swipe project__swipe--prev">
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <button className="project__swipe project__swipe--next">
+        <button type="button" className="project__swipe project__swipe--next">
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
-          loop={true}
+          loop
           scrollbar={{ draggable: true }}
           navigation={{
             nextEl: '.project__swipe--next',
@@ -46,16 +45,14 @@ export default function Project(props) {
           pagination={{ clickable: true }}
         >
           {imageArray.map((image, i) => (
-            <SwiperSlide key={i}>
+            <SwiperSlide key={image.id}>
               <GatsbyImage imgClassName="project__image" image={getImage(image)} alt={imageAltArray[i]} />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
     ) : (
-      imageArray.map((image, i) => (
-        <GatsbyImage imgClassName="project__image" image={getImage(image)} alt={imageAltArray[i]} />
-      ))
+      <GatsbyImage imgClassName="project__image" image={getImage(image1)} alt={imageAltArray[0]} />
     );
 
   return (
@@ -64,7 +61,7 @@ export default function Project(props) {
 
       <div className="project__text-container">
         <h2 className="heading-secondary project__title">{title}</h2>
-        <div className="project__description" dangerouslySetInnerHTML={{ __html: text }}></div>
+        <div className="project__description" dangerouslySetInnerHTML={{ __html: text }} />
         <div className="project__stack">Stack: {stack}</div>
         <div className="project__buttons">
           {gitUrl && (

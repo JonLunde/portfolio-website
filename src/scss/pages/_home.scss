@@ -23,7 +23,7 @@
 
   // 1000px
   @media only screen and (max-height: 62.5em) {
-    height: 110rem;
+    height: 80rem;
   }
 
 
@@ -42,9 +42,9 @@
     justify-content: space-between;
     align-items: center;
 
-    // @media only screen and (max-height: 62.5em) {
-    //   height: 90%;
-    // }
+    @media only screen and (max-height: 62.5em) {
+      height: 80%;
+    }
 
     @include respond(tab-land) {
       height: 100rem;
@@ -67,14 +67,15 @@
     &__blinking {
       animation: blinking 1.5s infinite;
     }
-    
-    @media only screen and (max-height: 53.125em) {
-      font-size: 5rem;
-    }
 
     @include respond(phone) {
       font-size: 6rem;
     }
+    
+    @media only screen and (max-height: 62.5em) {
+      font-size: 5rem;
+    }
+
   }
   
   &__inline-wrapper {
@@ -100,7 +101,7 @@
       -webkit-box-decoration-break: clone;
 
 
-    @media only screen and (max-height: 53.125em) {
+    @media only screen and (max-height: 62.5em) {
       font-size: 3rem;
     }
 
@@ -112,7 +113,7 @@
   &__image {
     width: 500px;
 
-    @media only screen and (max-height: 53.125em) {
+    @media only screen and (max-height: 62.5em) {
       width: 300px;
     }
 
@@ -151,7 +152,7 @@
       transform: translateY(-0.4rem);
     }
 
-    @media only screen and (max-height: 53.125em) {
+    @media only screen and (max-height: 62.5em) {
       width: 5rem;
     }
   }
@@ -424,7 +425,7 @@
     width: 90%;
     margin-top: 2rem;
   }
-
+  
   &__form-label {
     position: absolute;
     top: -4rem;

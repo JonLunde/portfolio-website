@@ -1,6 +1,6 @@
 import React from 'react';
+
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby';
 
 export default function Intro({ aboutRef, projectsRef, contactRef }) {
   return (
@@ -22,15 +22,27 @@ export default function Intro({ aboutRef, projectsRef, contactRef }) {
           placeholder="none"
         />
         <div className="intro__button-container">
-          <a className="btn btn--intro" onClick={() => aboutRef.current.scrollIntoView({ behavior: 'smooth' })}>
+          <button
+            type="button"
+            className="btn btn--intro"
+            onClick={() => aboutRef.current.scrollIntoView({ behavior: 'smooth' })}
+          >
             About Me
-          </a>
-          <a className="btn btn--intro" onClick={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })}>
+          </button>
+          <button
+            type="button"
+            className="btn btn--intro"
+            onClick={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })}
+          >
             Projects
-          </a>
-          <a className="btn btn--intro" onClick={() => contactRef.current.scrollIntoView({ behavior: 'smooth' })}>
+          </button>
+          <button
+            type="button"
+            className="btn btn--intro"
+            onClick={() => contactRef.current.scrollIntoView({ behavior: 'smooth' })}
+          >
             Contact me
-          </a>
+          </button>
         </div>
         <div className="intro__social-container">
           <a
