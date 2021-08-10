@@ -18,6 +18,16 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Jon Lunde',
+        short_name: 'JL',
+        start_url: '/',
+        background_color: '#030031',
+        icon: 'src/images/favicon.svg',
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-fontawesome-css`,
     'gatsby-plugin-image',

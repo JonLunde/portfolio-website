@@ -6,6 +6,7 @@ export default function Contact({ contactRef }) {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  // Dispatches email. Form data is POSTed to a AWS Lambda function found in the functions folder.
   function handleSubmit(event) {
     const emailBody = { name, email, message };
     event.preventDefault();

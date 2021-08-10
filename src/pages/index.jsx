@@ -46,6 +46,7 @@ export default function Home({ data }) {
   );
 }
 
+// Fetching project information and images from Gatsby data layer.
 export const query = graphql`
   query GetAllProjects {
     allMarkdownRemark(sort: { fields: frontmatter___order }) {
