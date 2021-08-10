@@ -3,8 +3,8 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 export default function About({ aboutRef }) {
   return (
-    <div className="about" ref={aboutRef}>
-      <div className="about__container section-container">
+    <div className="about">
+      <div className="about__container section-container" ref={aboutRef}>
         <h1 className="heading-primary about__title">About me.</h1>
         <div className="about__content">
           <div className="about__speech-bubble">
