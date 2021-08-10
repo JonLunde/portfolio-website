@@ -357,8 +357,7 @@
 
   &__container {
     width: 60%;
-    height: 70rem;
-    // height: 70%;
+    height: 78rem;
     padding: 0rem 3rem;
     background-image: linear-gradient(to right bottom, $color-primary-700, $color-primary-900);
     border-radius: $border-radius-2;
@@ -413,17 +412,24 @@
   }
 
   &__form {
-    height: 90%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+  
   }
 
   &__form-group {
     position: relative;
     width: 90%;
-    margin-top: 2rem;
+    margin-top: 3rem;
+
+    &:first-of-type {
+      margin-top: 1rem;
+    }
+ 
   }
   
   &__form-label {
@@ -479,5 +485,6 @@
   }
 
   &__submit {
+    // margin-top: 3rem;
   }
 }
