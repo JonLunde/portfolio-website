@@ -18,8 +18,8 @@ export default function Home({ data }) {
       <Helmet>
         <html lang="en" />
         <meta charSet="utf-8" />
-        &apos;<title>Jon Lunde - Developer Portfolio</title>
-        <meta name="description" content="Welcome to my portfolio where I showcase some of my projects and myself!" />
+        &apos;<title>Jon Lunde - Software Developer</title>
+        <meta name="description" content="Welcome to my portfolio. Here I showcase some of my projects and myself." />
         <meta
           name="keywords"
           content="portfolio, Jon Lunde, Jon Magnar Lunde, Jon, Magnar,Lunde, HTML, CSS, JavaScript, Typescript, React, Angular, SCSS, GitHub, Web, Development, Software, Gatsby, ExpressJs, Express, NodeJs, Node, Junior, Junior devoloper, Oslo, Norway, C#, .NET, .NET Core, Java"
