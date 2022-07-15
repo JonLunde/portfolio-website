@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
   return (
@@ -22,13 +22,13 @@ function Navbar() {
             <span>About Me</span>
           </Link>
         </div>
-        <button type="button" className="navigation__dark-mode" aria-label="Dark Mode Button">
+        {/* <button type="button" className="navigation__dark-mode" aria-label="Dark Mode Button">
           <FontAwesomeIcon icon={faMoon} />
-        </button>
+        </button> */}
       </div>
-      <button type="button" className="navigation__dark-mode" aria-label="Dark Mode Button">
+      {/* <button type="button" className="navigation__dark-mode" aria-label="Dark Mode Button">
         <FontAwesomeIcon icon={faMoon} />
-      </button>
+      </button> */}
     </nav>
   );
 }

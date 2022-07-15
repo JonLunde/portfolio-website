@@ -29,7 +29,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    `gatsby-plugin-fontawesome-css`,
+    // `gatsby-plugin-fontawesome-css`,
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',

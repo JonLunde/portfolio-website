@@ -1,7 +1,7 @@
 import React from 'react';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 // import Swiper core and required modules
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
@@ -27,12 +27,12 @@ export default function Project(props) {
   const renderImages =
     imageArray.length > 1 ? (
       <div>
-        <button type="button" className="project__swipe project__swipe--prev">
+        {/* <button type="button" className="project__swipe project__swipe--prev">
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
         <button type="button" className="project__swipe project__swipe--next">
           <FontAwesomeIcon icon={faChevronRight} />
-        </button>
+        </button> */}
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
