@@ -9,3 +9,12 @@ public
 
 # Local Netlify folder
 .netlify
+
+# yarn2
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
