@@ -1,7 +1,11 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
-export default function About({ aboutRef }) {
+interface AboutProps {
+  aboutRef: React.RefObject<HTMLDivElement>;
+}
+
+export default function About({ aboutRef }: AboutProps) {
   return (
     <div className="about">
       <div className="about__container section-container" ref={aboutRef}>
@@ -32,17 +36,20 @@ export default function About({ aboutRef }) {
             </svg>
             <div className="about__text">
               <span>
-                Hey! I&apos;m Jon, an aspiring web and software developer with a passion for creating enjoyable user
-                experiences and making people&apos;s lives better through code! I find great motivation in working
-                together with others towards a common goal, this has always been a big part of my life through my
-                previous working experiences and playing football since I was a kid. From, and currently based in Oslo,
-                Norway, where I have just completed my bachelor&apos;s degree in Information Technology at OsloMet!
+                Hey! I&apos;m Jon, an aspiring web and software developer with a passion for
+                creating enjoyable user experiences and making people&apos;s lives better through
+                code! I find great motivation in working together with others towards a common goal,
+                this has always been a big part of my life through my previous working experiences
+                and playing football since I was a kid. From, and currently based in Oslo, Norway,
+                where I have just completed my bachelor&apos;s degree in Information Technology at
+                OsloMet!
                 <br />
-                <br />I enjoy writing Javascript and especially React, but I&apos;m also well versed with Angular and
-                Typescript as I spent the last six months working with them for my bachelor&apos;s project. For the
-                backend, I prefer ExpressJS and .NET Core. In my spare time I like to play football, guitar, video
-                games, and dabble in various technologies I find interesting. The technological rabbit hole I currently
-                find myself in is cryptocurrency.
+                <br />I enjoy writing Javascript and especially React, but I&apos;m also well versed
+                with Angular and Typescript as I spent the last six months working with them for my
+                bachelor&apos;s project. For the backend, I prefer ExpressJS and .NET Core. In my
+                spare time I like to play football, guitar, video games, and dabble in various
+                technologies I find interesting. The technological rabbit hole I currently find
+                myself in is cryptocurrency.
               </span>
             </div>
           </div>
