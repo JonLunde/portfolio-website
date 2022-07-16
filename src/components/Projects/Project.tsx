@@ -14,7 +14,18 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 
 export default function Project(props) {
   const {
-    frontmatter: { title, image1, image2, image3, imageAlt1, imageAlt2, imageAlt3, stack, gitUrl, websiteUrl },
+    frontmatter: {
+      title,
+      image1,
+      image2,
+      image3,
+      imageAlt1,
+      imageAlt2,
+      imageAlt3,
+      stack,
+      gitUrl,
+      websiteUrl,
+    },
     html: text,
   } = props;
 
@@ -46,7 +57,11 @@ export default function Project(props) {
         >
           {imageArray.map((image, i) => (
             <SwiperSlide key={image.id}>
-              <GatsbyImage imgClassName="project__image" image={getImage(image)} alt={imageAltArray[i]} />
+              <GatsbyImage
+                imgClassName="project__image"
+                image={getImage(image)}
+                alt={imageAltArray[i]}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -71,7 +86,12 @@ export default function Project(props) {
           )}
 
           {websiteUrl && (
-            <a href={websiteUrl} className="btn btn--white" target="_blank" rel="noopener noreferrer">
+            <a
+              href={websiteUrl}
+              className="btn btn--white"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Website
             </a>
           )}
