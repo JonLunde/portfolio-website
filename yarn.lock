@@ -8306,6 +8306,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^3.25.0":
+  version: 3.25.0
+  resolution: "gatsby-core-utils@npm:3.25.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.13.0
+    file-type: ^16.5.3
+    fs-extra: ^10.1.0
+    got: ^11.8.5
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: d67e1b56b32762f9f416bc0e3df8841247b735ac64ceb192ebbf50a7715bfe383586871a11031d2d0d986954df5ffd0e78b573e431e7c0557b9066d9cc353e4b
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^2.18.0":
   version: 2.18.0
   resolution: "gatsby-graphiql-explorer@npm:2.18.0"
@@ -8601,15 +8624,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:^6.18.1":
-  version: 6.18.1
-  resolution: "gatsby-remark-images@npm:6.18.1"
+"gatsby-remark-images@npm:^6.25.0":
+  version: 6.25.0
+  resolution: "gatsby-remark-images@npm:6.25.0"
   dependencies:
     "@babel/runtime": ^7.15.4
-    "@gatsbyjs/potrace": ^2.2.0
     chalk: ^4.1.2
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^3.18.1
+    gatsby-core-utils: ^3.25.0
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
     mdast-util-definitions: ^4.0.0
@@ -8619,7 +8641,7 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
     gatsby-plugin-sharp: ^4.0.0-next
-  checksum: 16108e9f5bddc0a9b425eee0f412b53112b6370ee935b0b5f7c02c59e780beb9f17ae1ba7535469cf4f95e4f5d2094f11c75febd394db22c2b891f747e9520f5
+  checksum: 4158184241cc563ae21365c4f20c11257764d1f5e3c7c61e4abbe17dafa2f5c9ef3acf041bc9074f95d7a1287d54540e2ac7bd01c536aaa54c58dff7de20d204
   languageName: node
   linkType: hard
 
@@ -13079,7 +13101,7 @@ __metadata:
     gatsby-plugin-sass: ^5.18.1
     gatsby-plugin-sharp: ^4.18.1
     gatsby-plugin-sitemap: ^5.18.1
-    gatsby-remark-images: ^6.18.1
+    gatsby-remark-images: ^6.25.0
     gatsby-source-filesystem: ^4.18.1
     gatsby-transformer-remark: ^5.18.1
     gatsby-transformer-sharp: ^4.18.1
